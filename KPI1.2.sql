@@ -1,0 +1,31 @@
+SELECT *
+FROM
+    ICUSTAYS AS I
+JOIN
+    LABEVENTS AS L ON I.subject_id = L.subject_id
+left JOIN D_LABITEMS as D on L.itemid = D.itemid
+WHERE
+    L.itemid IN ( 50862, 
+51116, 
+51237,
+51256,
+50809,
+50842,
+51006,
+50851,
+50882,
+50837,
+50820,
+51516,
+51067,
+50912,
+51265,	
+51464,
+50954,
+50843)
+;
+    
+
+
+    
+
